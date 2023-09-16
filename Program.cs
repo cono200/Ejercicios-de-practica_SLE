@@ -110,21 +110,31 @@ namespace EjerciciosPracticos
             Console.WriteLine("El titulo del libro es " + libro1.titulo);
             Console.WriteLine("El autor del libro es " + libro1.autor);
             */
-            public struct Coords
-        {
-            public Coords(double x, double y)
-            {
-                X = x;
-                Y = y;
-            }
 
-            public double X { get; }
-            public double Y { get; }
+                //STRUCT
 
-            public override string ToString() => $"({X}, {Y})";
+            //COORDENADAS CON STRUCT
+            /*
+            Coordenadas coordenadas1 = new Coordenadas();
+            Console.WriteLine(coordenadas1.y=5);
+            Console.WriteLine(coordenadas1.x=10);
+            */
+            //FECHA
+            /*
+            Fecha fecha1 = new Fecha();
+            Console.WriteLine(fecha1.dia=22);
+            Console.WriteLine(fecha1.mes = "Diciembre");
+            Console.WriteLine(fecha1.ano = 2023);
+            */
+
+            //CONVERTIDOR DE TEMPERATURA
+
+            Temperatura temperatura1 = new Temperatura();
+            Console.WriteLine("Escribe la temperatura en CELSIUS que desees convertir");
+            double celius= Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(temperatura1.Convertir(celius));
+
+
         }
-
-
-    }
     }
 }

@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace EjerciciosPracticos.Class
 {
-    public struct Coordenadas
+    public struct Fecha
     {
-        public int x { get; set; }
-        public int y { get; set; }
-
-        
-
-
+        public int dia { get; set; }
+        public string mes { get; set; }
+        public int ano { get; set; }
     }
 }
